@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chinese.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="script" href="chinese.js">
+    <title>Chinese Course.</title>
+</head>
+<body>
+    <script src="chinese.js"></script>
+    <div class="main">
+        <div class="section-title">
+            <h2>Chinese Course.</h2>
+            <p>Fast Food is Good Food.</p>
+            <br>
+        </div>
+        <div id="cart" class="cart">
+            <h4>Your Cart <i class="fa-brands fa-opencart"></i></h4>
+            <ol id="cartItems"></ol>
+            <p>Total: &#8377<span id="totalPrice">0</span></p>
+        </div>
+        <div class="menus">
+            <div class="menu-column">
+                <h4>Chinese</h4>
+                <div class="single-menu">
+                    <img src="hakka noodles.jpg" alt="hakka noodles">
+                    <div class="menu-content" id="Hakka Noodles">
+                        <h5>Hakka Noodles  &nbsp; <span>&#8377 120/90</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                        <button onclick="addToCart('Hakka Noodles', 'full')">FULL</button>
+                        <button onclick="addToCart('Hakka Noodles', 'half')">HALF</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Garlic Noodles">
+                    <img src="https://lh3.googleusercontent.com/fCfCP2gj3fQVwOSDqktHRRLbcJqXq0eNM05tflIES8b62APpbGhX8ONWaMijWe_uVrhaHaYjbIW3WKlEDRXeDqcJ8R8VU9GpRukKFMY=w512-rw" alt="garlic noodles">
+                    <div class="menu-content">
+                        <h5>Garlic Noodles &nbsp;<span>&#8377 120/90</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Garlic Noodles', 'full')">FULL</button>
+                            <button onclick="addToCart('Garlic Noodles', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Schezwan Noodles">
+                    <img src="https://lh3.googleusercontent.com/NEehn8_OVOXl5L_kM3Eyz94cHq-IhElcvzwDM_-B--4bTvAOzFBgC_mOulsTzReGNWortxeDHtVA1KnQVEmIkg4XE-GcVjyZffqDKao2" alt="schezwan noodles">
+                    <div class="menu-content">
+                        <h5>Schezwan Noodles <span>&#8377 140/100</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Schezwan Noodles', 'full')">FULL</button>
+                            <button onclick="addToCart('Schezwan Noodles', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Manchau Soup">
+                    <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcT0O-O-wgljAJR2qzPMRKo-qMRcte0WbjOey4vp0GOBJn4uqW24t5NkzzophVhidbiMPY5iD5OhdSni0gg" alt="manchau soup">
+                    <div class="menu-content">
+                        <h5>Manchau Soup &nbsp;<span>&#8377 90/50</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Manchau Soup', 'full')">FULL</button>
+                            <button onclick="addToCart('Manchau Soup', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Chicken Noodles" >
+                    <img src="https://cdn.storehippo.com/s/62ea2c599d1398fa16dbae0a/648a5e7381b5ebf725f47079/webp/z6hnysoq5fijyvvd3lvmkmcf6ffubohklc7td0tkwhe40ipielmsdqgvbaohmb4d-e1us-ggrkmptszt2z2mpn0jy31b3colp8sigwtf.jpg" alt="chicken noodles">
+                    <div class="menu-content">
+                        <h5>Chicken Noodles &nbsp;<span>&#8377 170/120</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Chicken Noodles', 'full')">FULL</button>
+                            <button onclick="addToCart('Chicken Noodles', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="menu-column" id="col2">
+                <h4></h4>
+                <div class="single-menu" id="Manchau Noodles">
+                    <img src="https://enstore.sgp1.digitaloceanspaces.com/4573/item-90650431-EBkSE0xtas.jpg" alt="manchau noodles">
+                    <div class="menu-content">
+                        <h5>Manchau Noodles <span>&#8377 160/100</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Manchau Noodles', 'full')">FULL</button>
+                            <button onclick="addToCart('Manchau Noodles', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Dry Manchurian">
+                    <img src="https://lh3.googleusercontent.com/kzYLWIN0bDTVgKsYwyWNU579SN3P98qBAI9hyt9SwweuPK1uvbJq4KxbMGpzCsL1chCc8b1EfG7kA5IdptoYOiPemBvPbev06JTNQh4=w512-rw" alt="dry manchurian">
+                    <div class="menu-content">
+                        <h5>Dry Manchurian &nbsp;<span>&#8377 110/80</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Dry Manchurian', 'full')">FULL</button>
+                            <button onclick="addToCart('Dry Manchurian', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Chicken Fr Rice">
+                    <img src="https://lh3.googleusercontent.com/exGxYA-lK6bwVcQ0TBgUIBDR5d92QaQWYgDJarszdMTh_rujjga0okH_szUqTwUVhnZJfoxrtvBaAirkajueOQXNYuCWPwYK26wXw44" alt="chicken fr rice">
+                    <div class="menu-content">
+                        <h5>Chicken Fr Rice &nbsp;<span>&#8377 140/110</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Chicken Fr Rice', 'full')">FULL</button>
+                            <button onclick="addToCart('Chicken Fr Rice', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Schezwan Rice">
+                    <img src="https://lh3.googleusercontent.com/MZ-uSQTLPtNhQ3EGF9VxqnRKxwuHAg1kgdbn1pwwlKlOB88Aa10CtmPnlcZnUadKKyz_nWhU8SNuzdVsg6gV1DyeweS_hZLZSQAd7Ew4" alt="schezwan rice">
+                    <div class="menu-content">
+                        <h5>Schezwan Rice &nbsp; <span>&#8377 140/110</span></h5>
+                        <p>⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Schezwan Rice', 'full')">FULL</button>
+                            <button onclick="addToCart('Schezwan Rice', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

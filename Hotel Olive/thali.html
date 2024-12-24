@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="thali.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="script" type="script" href="thali.js">
+    <title>Thali Course.</title>
+</head>
+<body>
+    <script src="thali.js"></script>
+    <div class="main">
+        <div class="section-title">
+            <h2>Thali Course.</h2>
+            <p>Live Royal Eat Royal.</p>
+        </div>
+        <div id="cart" class="cart">
+            <h4>Your Cart <i class="fa-brands fa-opencart"></i></h4>
+            <ol id="cartItems"></ol>
+            <p>Total: &#8377<span id="totalPrice">0</span></p>
+        </div>
+        <div class="menus">
+            <div class="menu-column">
+                <h4>Thali's</h4>
+                <div class="single-menu" id="Maharastrian Thali">
+                    <img src="https://lh3.googleusercontent.com/vD2Km6pTyoqroUv76bo12lypv0wiMUcKq8Mz0e5ICMY9YYAt6-r1hjLzjxB3l2INkVYLZoPQRY-yPSt46Ix7OwahMUyX=w512-rw" alt="maharastrian thali">
+                    <div class="menu-content">
+                        <h5>Maharastrian Thali  &nbsp; <span>&#8377 550</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Maharastrian Thali', 'full')">FULL</button>
+                            <!-- <button onclick="addToCart('Maharastrian Thali', 'half')">HALF</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Bengali Veg-Thali">
+                    <img src="https://lh3.googleusercontent.com/A2mDiGGutJYvREzXwvpjP1DJLIII8euT19kS5qdgccQSRwm-TIZEN7GbIbQxgrDU7UjpyaU1bulUkVYGiG3V6K07Ayo" alt=" bengali veg thali">
+                    <div class="menu-content">
+                        <h5>Bengali Veg-Thali <span>&#8377 450</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Bengali Veg-Thali', 'full')">FULL</button>
+                            <!-- <button onclick="addToCart('Bengali Veg-Thali', 'half')">HALF</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Goa Veg-Thali">
+                    <img src="https://thumbs.dreamstime.com/b/indian-fish-platter-seafood-thali-served-steel-plate-over-banana-leaf-popular-sea-food-non-vegetarian-meal-mumbai-193378371.jpg" alt="goa veg thali">
+                    <div class="menu-content">
+                        <h5>Goa Veg-Thali &nbsp;<span>&#8377 400</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Goa Veg-Thali', 'full')">FULL</button>
+                            <!-- <button onclick="addToCart('Goa Veg-Thali', 'half')">HALF</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Rajasthani Thali">
+                    <img src="https://lh3.googleusercontent.com/EWxBvBHFM4znZgd5fetyI9G3VFdmIcsRVf2KUt1K1_KCd5kFpq7i_a7iHVlgJdf_bOgnb0SEqaXlk0496usIagPY4qi0=w512-rw" alt="rajasthani thali">
+                    <div class="menu-content">
+                        <h5>Rajasthani Thali &nbsp;<span>&#8377 490</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Rajasthani Thali', 'full')">FULL</button>
+                            <!-- <button onclick="addToCart('Rajasthani Thali', 'half')">HALF</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Kashmiri Thali">
+                    <img src="https://media.istockphoto.com/id/1284598212/photo/traditional-indian-food.webp?s=1024x1024&w=is&k=20&c=RDHU2xK5bMXEPnVLMXVU9vaa6xKvyWzgY5Kp5KZm_4Q=" alt="kashmiri thali">
+                    <div class="menu-content">
+                        <h5>Kashmiri Thali  &nbsp;<span>&#8377 599</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Kashmiri Thali', 'full')">FULL</button>
+                            <!-- <button onclick="addToCart('Kashmiri Thali', 'half')">HALF</button> -->
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="menu-column" id="col2">
+                <h4></h4>
+                <div class="single-menu" id="Gujrathi SP.Thali">
+                    <img src="https://lh3.googleusercontent.com/RAIuEH2mUUswc-KyFyhBpGTmzi1Gn7ZY-1nyPViniZP21bNROPZp892675U6y6uuWgMZeF2lTQHtPjlhKwwPUFXq74aU9lSBus-lA81z" alt="gujrati thali">
+                    <div class="menu-content">
+                        <h5>Gujrathi SP.Thali &nbsp; <span>&#8377 499</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Gujrathi SP.Thali', 'full')">FULL</button>
+                            <!-- <button onclick="addToCart('Gujrathi SP.Thali', 'half')">HALF</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Panjabi Thali">
+                    <img src="https://lh3.googleusercontent.com/iqIfGcfa8LFYapwZO3sxG_3pYvB1fODAz5HoORjsdWUFpyhLwBfpi8JREpiBfKZ0KiG_ffo52D4zu1qcG82Dk5V4MoVFz5HAmQNf89Mf=w512-rw" alt="panjabi thali">
+                    <div class="menu-content">
+                        <h5>Panjabi Thali &nbsp; <span>&#8377 450</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Panjabi Thali', 'full')">FULL</button>
+                            <!-- <button onclick="addToCart('Panjabi Thali', 'half')">HALF</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Malawa Thali">
+                    <img src="https://imgmedia.lbb.in/media/2021/06/60cdfaf65f2dca48422e7bd4_1624111862171.jpg" alt="malawa thali">
+                    <div class="menu-content">
+                        <h5>Malawa Thali &nbsp; <span>&#8377 499</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Malawa Thali', 'full')">FULL</button>
+                            <!-- <button onclick="addToCart('Malawa Thali', 'half')">HALF</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Andhra Thali">
+                    <img src="https://lh3.googleusercontent.com/B7mSiswbVotUL9GF1wMESiNHeyItJr08xJCjWrRb3IvurETWdrDWX1KNza3mRooyw9WLYOY2lFBNHYA8YL2g5ZEPJ8E0ya8pZWHi8bs" alt="andhra thali">
+                    <div class="menu-content">
+                        <h5>Andhra Thali &nbsp; <span>&#8377 350</span></h5>
+                        <p>⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Andhra Thali', 'full')">FULL</button>
+                            <!-- <button onclick="addToCart('Andhra Thali', 'half')">HALF</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

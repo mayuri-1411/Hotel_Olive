@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Form</title>
+<link rel="icon" type="image/x-icon" href="https://w7.pngwing.com/pngs/222/873/png-transparent-contact-us-icon-email-iphone-telephone-computer-icons-contact-miscellaneous-blue-angle-thumbnail.png">
+<style>
+body 
+{
+  font-family: Bodoni MT; 
+  background:  linear-gradient(to bottom, rgb(255, 255, 255), black);
+}
+* {box-sizing: border-box;}
+
+
+h3
+{
+    text-align: center;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ 
+  
+}
+
+input[type=submit]:hover {
+  background-color: black;
+}
+
+.btn
+{
+    text-align:center;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #fa5d5d;
+  background: linear-gradient(to right, red, black);
+  background:  linear-gradient(to bottom, rgb(255, 255, 255), black);
+  padding: 20px;
+  background-size: cover;
+  box-sizing: border-box;
+  border-radius: 50px; 
+  
+
+
+}
+</style>
+
+
+<script>
+  function Contact() 
+  {
+      alert("Your Complaint Has Been Submitted.");
+  }
+</script>
+
+
+</head>
+<body>
+  <h4>Emergency contact: &#xf3cd; 9307596498</h4>
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Email</label>
+    <input type="text" id="Email" name="Email" placeholder="Your Email..">
+
+    <label for="Complaint">Complaint</label>
+    <textarea id="Complaint" name="Complaint" placeholder="Register Your Complaint.." style="height:150px"></textarea>
+      <div class="btn">
+    <input   type="submit" value="Submit" onclick="Contact()">
+    </div>
+  </form>
+  
+</div>
+</body>
+</html>

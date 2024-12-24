@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="veg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="script" href="veg.js">
+    <title>Chinese Course.</title>
+</head>
+<body>
+    <script src="veg.js"></script>
+    <div class="main">
+        <div class="section-title">
+            <h2>Veg Course.</h2>
+            <p>Enjoy The Pure Veg Course.</p>
+            <br>
+        </div>
+        <div id="cart" class="cart">
+            <h4>Your Cart <i class="fa-brands fa-opencart"></i></h4>
+            <ol id="cartItems"></ol>
+            <p>Total: &#8377<span id="totalPrice">0</span></p>
+        </div>
+        <div class="menus">
+            <div class="menu-column">
+                <h4>Veg</h4>
+                <div class="single-menu">
+                    <img src="https://www.puvi.co/uploaded_images/1637995001.png" alt="paneer masala">
+                    <div class="menu-content" id="Paneer Masala">
+                        <h5>Paneer Masala  &nbsp; <span>&#8377 150/120</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                        <button onclick="addToCart('Paneer Masala', 'full')">FULL</button>
+                        <button onclick="addToCart('Paneer Masala', 'half')">HALF</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Paneer-Handi">
+                    <img src="https://lh3.googleusercontent.com/3M_TU4w3PEGzldkEUnfbK5J1yc-xxIEcnQy7rX1UWoOHR15g7iVVWFvl5Yy4R9ldsnX-91fTUJi_dJ55Gor_4BMcjr8LCwzrxvGFduvW=w512-rw" alt="paneer handi">
+                    <div class="menu-content">
+                        <h5>Paneer-Handi &nbsp;<span>&#8377 200/140</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Paneer-Handi', 'full')">FULL</button>
+                            <button onclick="addToCart('Paneer-Handi', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Shahi Pulav">
+                    <img src="https://i.pinimg.com/564x/36/52/4e/36524e00838477b120ba177b05069691.jpg" alt="shahi pulav">
+                    <div class="menu-content">
+                        <h5>Shahi Pulav <span>&#8377 140/90</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Shahi Pulav', 'full')">FULL</button>
+                            <button onclick="addToCart('Shahi Pulav', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Dal Makhani">
+                    <img src="https://www.shutterstock.com/image-photo/dal-makhani-dark-background-traditional-260nw-1488418508.jpg" alt="dal makhani">
+                    <div class="menu-content">
+                        <h5>Dal Makhani &nbsp;<span>&#8377 90/50</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Dal Makhani', 'full')">FULL</button>
+                            <button onclick="addToCart('Dal Makhani', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Dal-Tadka" >
+                    <img src="https://enstore.sgp1.digitaloceanspaces.com/1332/item-239703-03u3slTzcE.jpg" alt="dal tadkha">
+                    <div class="menu-content">
+                        <h5>Dal-Tadka &nbsp;<span>&#8377 170/120</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Dal-Tadka', 'full')">FULL</button>
+                            <button onclick="addToCart('Dal-Tadka', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="menu-column" id="col2">
+                <h4></h4>
+                <div class="single-menu" id="Jeera Rice">
+                    <img src="https://enstore.sgp1.digitaloceanspaces.com/4094/item-90318644-ALbiiD8E3Q.jpg" alt="jeera rice">
+                    <div class="menu-content">
+                        <h5>Jeera Rice <span>&#8377 100/70</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Jeera Rice', 'full')">FULL</button>
+                            <button onclick="addToCart('Jeera Rice', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Veg-Maratha">
+                    <img src="https://madhurasrecipe.com/wp-content/uploads/2020/10/Veg-Maratha-Marathi-Recipe-feature.jpg" alt="veg maratha">
+                    <div class="menu-content">
+                        <h5>Veg-Maratha &nbsp;<span>&#8377 160/130</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Veg-Maratha', 'full')">FULL</button>
+                            <button onclick="addToCart('Veg-Maratha', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Tandoor Roti">
+                    <img src="https://www.cookwithmanali.com/wp-content/uploads/2021/07/Tandoori-Roti-500x500.jpg" alt="tandoor roti">
+                    <div class="menu-content">
+                        <h5>Tandoor Roti &nbsp;<span>&#8377 25</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Tandoor Roti', 'full')">FULL</button>
+                            <!-- <button onclick="addToCart('Tandoor Roti', 'half')">HALF</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Butter Roti">
+                    <img src="https://www.shutterstock.com/image-photo/indian-special-flat-bread-known-600nw-1936750558.jpg" alt="buttor roti">
+                    <div class="menu-content">
+                        <h5>Butter Roti &nbsp; <span>&#8377 30</span></h5>
+                        <p>⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Butter Roti', 'full')">FULL</button>
+                            <!-- <button onclick="addToCart('Butter Roti', 'half')">HALF</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

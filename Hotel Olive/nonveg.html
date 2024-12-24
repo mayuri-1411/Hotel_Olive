@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="nonveg.css">
+    <link rel="script" type="script" href="nonveg.js">
+    <title>Non-Veg Course.</title>
+</head>
+<body>
+    <script src="nonveg.js"></script>
+    <div class="main">
+        <div class="section-title">
+            <h2>Non-Veg Course.</h2>
+            <p>Eat & Build.</p>
+        </div>
+        <div id="cart" class="cart">
+            <h4>Your Cart <i class="fa-brands fa-opencart"></i></h4>
+            <ol id="cartItems"></ol>
+            <p>Total: &#8377<span id="totalPrice">0</span></p>
+        </div>
+        <div class="menus">
+            <div class="menu-column">
+                <h4>Non-Veg</h4>
+                <div class="single-menu">
+                    <img src="https://lh3.googleusercontent.com/hza8LRB7IgAiC83KitMISQA6jBKAVdDxh-135NQDI5bHp8bsN_msR0yvaqsQZnuDlbZaHknBf9tkdSEt-t2K5RnGqzyY5VfLUhQ0KpH4=w512-rw" alt="chicken biryani">
+                    <div class="menu-content" id="Chicken Biryani">
+                        <h5>Chicken Biryani<span>&#8377 150/120</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Chicken Biryani', 'full')">FULL</button>
+                            <button onclick="addToCart('Chicken Biryani', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://lh3.googleusercontent.com/IdZpXrUjgNyf1I3i2Rp5FZI-oEHG9ZBoooL5Za1IAB8NdF93XLCKSHZpotvtxV9Dza57WaQKNKQWlV9GJtjiGhoyLQTC-QwzBQO3Aq40=w512-rw" alt="chicken dum biryani">
+                    <div class="menu-content" id="Chicken Dum Biryani">
+                        <h5>Chicken Dum Biryani<span>&#8377 140/100</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Chicken Dum Biryani', 'full')">FULL</button>
+                            <button onclick="addToCart('Chicken Dum Biryani', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://lh3.googleusercontent.com/X5GSqhHaCTYwy6Y7yr85YE7BgFJF32R3AF7EpzT_5rIRmwMPcc3OlLcI_BVKFHKJ_--hYdRZBcR5OHkI8JW4C3BNBGVLnwIBABk56nt0nw" alt="mutton biryani">
+                    <div class="menu-content" id="Mutton Biryani">
+                        <h5>Mutton Biryani<span>&#8377 180/140</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Mutton Biryani', 'full')">FULL</button>
+                            <button onclick="addToCart('Mutton Biryani', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://lh3.googleusercontent.com/szFRk9LxqYnuI4A_J-BMb_sYYZLID1vZDfWx_rj5DXlwwubS_BppH9JzjUuP5O6q17h4CCpZPi13LloijF2SiIDHVkS6=w512-rw" alt="sp.mutton thali">
+                    <div class="menu-content" id="Sp.Mutton Thali">
+                        <h5>Sp.Mutton Thali<span>&#8377 180</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Sp.Mutton Thali', 'full')">FULL</button>
+                            <!-- <button onclick="addToCart('Sp.Mutton Thali', 'half')">HALF</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://lh3.googleusercontent.com/h75gNpv_Jeg4ztnpGqE0bYn39r6R9i0mezCYFFPySATcPy1Wmq3AoerEOaZdfWUujqP4RcMvu99v_XDMnQWJ3Zbe2Iu7TLqAxx4y4VRj=w512-rw" alt="sp.chicken thali">
+                    <div class="menu-content" id="Sp.chicken Thali">
+                        <h5>Sp.chicken Thali<span>&#8377 120</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Sp.chicken Thali', 'full')">FULL</button>
+                            <!-- <button onclick="addToCart('Sp.chicken Thali', 'half')">HALF</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-column" id="col2">
+                <h4></h4>
+                <div class="single-menu">
+                    <img src="https://lh3.googleusercontent.com/B13A5kwRTYyPniLeNU1hEE35Zv_JLeExaI_VeSY-eItLi6-C_-AM73BzvgxgQwetlnG71OHiH-ruMU7wApMBY6mxrHHtPFfxPMUAJJgM" alt="mutton handi">
+                    <div class="menu-content" id="Mutton Handi">
+                        <h5>Mutton Handi<span>&#8377 350/250</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Mutton Handi', 'full')">FULL</button>
+                            <button onclick="addToCart('Mutton Handi', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://1.bp.blogspot.com/-yJBQwqQcUOs/X5gtEJXEoCI/AAAAAAAAY94/gut_UssF__8lT0P2kl9patf4FY-U4YCtQCLcBGAsYHQ/s2048/chicken%2B65%2B4.JPG" alt="chicken 65">
+                    <div class="menu-content" id="Chicken 65">
+                        <h5>Chicken 65<span>&#8377 120/80</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Chicken 65', 'full')">FULL</button>
+                            <button onclick="addToCart('Chicken 65', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Chicken Lolipop">
+                    <img src="https://lh3.googleusercontent.com/VqTdtXqIQdcIyWf6arUMbRHkqM2fuPXepqbi83lxsMLBt9qVWLCiITN1VnKbVzQ85fKaLnfG9AKlYtMvHG4e0hQR7rh0mvS-Vj7mqPFYgQ" alt="chicken lolipop">
+                    <div class="menu-content">
+                        <h5>Chicken Lolipop<span>&#8377 160/120</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Chicken Lolipop', 'full')">FULL</button>
+                            <button onclick="addToCart('Chicken Lolipop', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="single-menu">
+                    <img src="https://lh3.googleusercontent.com/oqYucoBd0HxXwvr0pHLgm_ZXXhBV9t-p3PwKFSktfjH1owTKHESNYThIUwTFD7Wg5JSCd_65qKxlrQV8za3nckAM3lKA3fx2I7LqD4Oj=w512-rw" alt="chicken handi">
+                    <div class="menu-content" id="Chicken Handi">
+                        <h5>Chicken Handi<span>&#8377 300/220</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Chicken Handi', 'full')">FULL</button>
+                            <button onclick="addToCart('Chicken Handi', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="italian.css">
+    <link rel="script" type="script" href="italian.js">
+    <title>Italian Course.</title>
+</head>
+<body>
+    <script src="italian.js"></script>
+    <div class="main">
+        <div class="section-title">
+            <h2>Italian Course.</h2>
+            <p>Come Join Our Italia Range.</p>
+        </div>
+        <div id="cart" class="cart">
+            <h4>Your Cart <i class="fa-brands fa-opencart"></i></h4>
+            <ol id="cartItems"></ol>
+            <p>Total: &#8377<span id="totalPrice">0</span></p>
+        </div>
+        <div class="menus">
+            <div class="menu-column">
+                <h4>Italian</h4>
+                <div class="single-menu" >
+                    <img src="https://media.istockphoto.com/id/1295773428/photo/pizza-with-cheese-isolated-on-white-background-clipping-path-full-depth-of-field.jpg?s=612x612&w=0&k=20&c=Oomq20XpoHKvkMROs5doC26BSWxrZH8Gs6sYIEPMtKs=" alt="cheese pizza">
+                    <div class="menu-content" id="Cheese-Pizza">
+                        <h5>Cheese Pizza  &nbsp; <span>&#8377 349/250/190</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Cheese-Pizza', 'large')">LARGE</button>
+                            <button onclick="addToCart('Cheese-Pizza', 'medium')">MEDIUM</button>
+                            <button onclick="addToCart('Cheese-Pizza', 'small')">SMALL</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Veggie Pizza">
+                    <img src="https://media.istockphoto.com/id/184098729/photo/vegetarian-pizza-03.jpg?s=170667a&w=0&k=20&c=uO4-hkxCRJLhufStlic_eCCtfQIQcL9hYCbIUPoGpEs=" alt="veggie pizza">
+                    <div class="menu-content">
+                        <h5>Veggie Pizza <span>&#8377 250/190/140</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Veggie Pizza', 'large')">LARGE</button>
+                            <button onclick="addToCart('Veggie Pizza', 'medium')">MEDIUM</button>
+                            <button onclick="addToCart('Veggie Pizza', 'small')">SMALL</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Corn Pizza">
+                    <img src="https://www.dominos.co.in//files/items/Corn_&_Cheese.jpg" alt="corn pizza">
+                    <div class="menu-content">
+                        <h5>Corn Pizza &nbsp;<span>&#8377 250/200/150</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Corn Pizza', 'large')">LARGE</button>
+                            <button onclick="addToCart('Corn Pizza', 'medium')">MEDIUM</button>
+                            <button onclick="addToCart('Corn Pizza', 'small')">SMALL</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Chicken Burger">
+                    <img src="https://t3.ftcdn.net/jpg/03/31/97/12/360_F_331971227_4qWv5G4sZXVWkFlzOAuGk9VYInKV3d4x.jpg" alt="chicken burger">
+                    <div class="menu-content">
+                        <h5>Chicken Burger &nbsp;<span>&#8377 140/100</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Chicken Burger', 'Jumbo')">JUMBO</button>
+                            <button onclick="addToCart('Chicken Burger', 'small')">SMALL</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Tikki Burger">
+                    <img src="https://c.ndtvimg.com/2022-06/gp4k2jro_burgers_625x300_20_June_22.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886" alt="tikki burger">
+                    <div class="menu-content">
+                        <h5>Tikki Burger   &nbsp;<span>&#8377 100/80</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Tikki Burger', 'jumbo')">JUMBO</button>
+                            <button onclick="addToCart('Tikki Burger', 'small')">SMALL</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="menu-column" id="col2">
+                <h4></h4>
+                <div class="single-menu">
+                    <img src="https://www.cookwithmanali.com/wp-content/uploads/2019/11/Makhani-Pasta-Instant-Pot-500x500.jpg" alt=" makhani pasta">
+                    <div class="menu-content" id="Makhani Pasta">
+                        <h5>Makhani Pasta &nbsp; <span>&#8377 120/80</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Makhani Pasta', 'full')">FULL</button>
+                            <button onclick="addToCart('Makhani Pasta', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Cheese Pasta">
+                    <img src="https://t3.ftcdn.net/jpg/06/47/87/34/360_F_647873492_E7UTZAHGYjITLs0aPgKZPagwEqNr7B2Q.jpg" alt="cheese pasta">
+                    <div class="menu-content">
+                        <h5>Cheese Pasta &nbsp; <span>&#8377 140/100</span></h5>
+                        <p>⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Cheese Pasta', 'full')">FULL</button>
+                            <button onclick="addToCart('Cheese Pasta', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Italian Pasta">
+                    <img src="https://static.independent.co.uk/2021/09/27/13/Food-MilkStreet-Harissa-Pasta_with_Chicken_78512.jpg" alt="italian pasta">
+                    <div class="menu-content">
+                        <h5>Italian Pasta &nbsp; <span>&#8377 160/130</span></h5>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Italian Pasta', 'full')">FULL</button>
+                            <button onclick="addToCart('Italian Pasta', 'half')">HALF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-menu" id="Veg Burger">
+                    <img src="https://www.fatburgercanada.com/wp-content/uploads/2019/08/veggie-burger.png" alt="veg burger">
+                    <div class="menu-content">
+                        <h5>Veg Burger &nbsp;<span>&#8377 100/80</span></h5>
+                        <p>⭐⭐⭐</p>
+                        <div id="btn">
+                            <button onclick="addToCart('Veg Burger', 'jumbo')">JUMBO</button>
+                            <button onclick="addToCart('Veg Burger', 'small')">SMALL</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
